@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,700;1,400&display=swap');
+
+
+/* color de fuente a usar*/
+:root {
+    --color-de-fuentes:#c49e71;
+    --white: #FFFAFA;
+    --red-cart: #D00207;
+    --beige: #DDD0C8;
+    --dark-grey: #323232;
+    --crimson: #F0122D;
+}
+
+
+*{
+    font-family: 'Roboto Condensed', sans-serif;
+    padding: 0;
+    margin: 0;}
+html{font-size: 62.5%;}
+
+
+
+/* Fuentes tamaños y colores*/
+h1,h2{
+    text-align: center; 
+    margin: 30px; 
+    color:var(--beige);   
+}
+h3 {
+    text-align: center; 
+    margin: 30px; 
+    color:var(--crimson);   
+}
+
+p{
+    color: var(--beige);
+    font-size: 20px;
+    line-height: 28px;
+    margin: 5px;
+    padding: 5px;
+    text-align: center;
+}
+h1{font-size: 65px}
+h2{font-size: 45px;}
+h3{font-size: 30px;}
+
+/*ACA ARRANCA EL NAV*/
+
+nav{
+    font-size: 95px;
+    color: var(--beige);  
+    background-color: var(--dark-grey); 
+    opacity: 0.8;  
+    padding-left: 0px;
+    padding-top: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 100px;
+    max-height: 200px;
+}
+
+.sticky {
+    position: sticky;
+    top: 0;
+    background-color: var(--crimson);
+    text-align: center;
+    font-size: 20px;
+}
+
+/* .links:hover{
+                        text-decoration-color: #891010;
+                        text-decoration-style: none;
+    }         */         
+.links{
+                            color: var(--beige) ;
+                            text-decoration: solid;
+                            max-height: 100%;
+                            padding: 0 10px;
+                            }
+.link:hover {
+    color: var(--crimson);
+    text-decoration: wavy;
+
+}
+
+.logo{
+    max-height: 200px;
+    min-height: 100%;
+}
+
+.shopping-cart {
+    max-height: 100px;
+    min-height: 50%;}
+    
+
+
+/* ACA ARRANCA EL BODY */
+
+body{
+    background-image: url(../img/BackGround/prism.png);
+    background-repeat: repeat;
+}
+
+body main section{
+    display: inline-block;
+    margin: 10px;
+}
+/* Ponga este formato para que las imagenes sean del mismo tamaño y queden alineadas*/
+.section-images {
+    justify-content: center;
+    justify-items: center;
+    width: 480px;
+    height: 480px;
+}
+/* Agrego clase para que sea igual que p otros contenidos similares y no crear varios css */
+.same-as-p {
+    color: var(--beige);
+    font-size: 20px;
+    line-height: 28px;
+    margin: 20px;
+    padding: 10px;
+    text-align: center;
+}
+
+.three-content-max{
+    width: 32%;
+}
+
+.center-image {
+    text-align: center;
+}
+
+.same-as-index-main {
+    display: inline-block;
+    margin: 60px;
+    justify-content: center;
+    justify-items: center;
+    text-align: center;
+
+}
+
+.products-borders {
+    border: 5px;
+}
+
+.size-chart-images {
+    text-align: center;
+    margin: 30px;
+}
+.size-chart-height {
+    height: 1156px;
+}
+.button-style {
+    padding: 9px;
+    background-color: var(--beige);
+    border: none;
+    border-radius: 6px;
+}
+
+.button-hover:hover {
+    color: var(--beige);
+    background-color: var(--crimson);
+ }
+
+ 
+/*ACA ARRANCA FOOTER*/ 
+/* le doy formato al footer para que quede fijo y ordenado el contenido*/ 
+
+footer{ 
+        padding-top: 20px; 
+        width: 100%;
+        background-color: var(--dark-grey); 
+        opacity: 0.8;
+        display: flex ;
+        justify-content: center;
+        margin-top: 150px;
+        margin-bottom: 0px;
+    }
+footer img{
+            width: 150px;
+            display: inline-block;
+            padding: 5px;
+            max-height: 100px;
+            max-width: 100px;}
+footer h3 ul li{font-size: 20px; line-height: 28px;}
+
+
+/* le doy un maximo de altura para que no se rompa el footer o las imagenes se excedan.*/
+.mi-contenedor {
+    max-height: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.mi-contenedor p {
+    margin: 0;
+}
