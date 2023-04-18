@@ -11,12 +11,14 @@
     --crimson: #F0122D;
 }
 
+.bg-color-grey {
+    background-color: #323232 ;
+}
+
 
 *{
     font-family: 'Roboto Condensed', sans-serif;
-    padding: 0;
-    margin: 0;}
-html{font-size: 62.5%;}
+}
 
 
 
@@ -24,12 +26,12 @@ html{font-size: 62.5%;}
 h1,h2{
     text-align: center; 
     margin: 30px; 
-    color:var(--beige);   
+    color:var(--crimson);   
 }
 h3 {
     text-align: center; 
     margin: 30px; 
-    color:var(--crimson);   
+    color: #F0122D;   
 }
 
 p{
@@ -40,26 +42,31 @@ p{
     padding: 5px;
     text-align: center;
 }
-h1{font-size: 65px}
-h2{font-size: 45px;}
-h3{font-size: 30px;}
+h1{font-size: 45px}
+h2{font-size: 35px;}
+h3{font-size: 20px;}
 
 /*ACA ARRANCA EL NAV*/
 
+nav {
+    font-size: 60px;
+    margin-top: 0px;    
+}
+
+/*
 nav{
-    font-size: 95px;
+    font-size: 75px;
     color: var(--beige);  
     background-color: var(--dark-grey); 
-    opacity: 0.8;  
     padding-left: 0px;
     padding-top: 0;
-    display: flex;
     flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
+    justify-content: space-evenly;
+    align-items: ;
     min-height: 100px;
     max-height: 200px;
 }
+*/
 
 .sticky {
     position: sticky;
@@ -69,10 +76,7 @@ nav{
     font-size: 20px;
 }
 
-/* .links:hover{
-                        text-decoration-color: #891010;
-                        text-decoration-style: none;
-    }         */         
+ 
 .links{
                             color: var(--beige) ;
                             text-decoration: solid;
@@ -86,7 +90,7 @@ nav{
 }
 
 .logo{
-    max-height: 200px;
+    max-height: 100%;
     min-height: 100%;
 }
 
@@ -95,54 +99,23 @@ nav{
     min-height: 50%;}
     
 
-
 /* ACA ARRANCA EL BODY */
 
 body{
     background-image: url(../img/BackGround/prism.png);
     background-repeat: repeat;
+    min-height: 100%;
 }
 
-body main section{
-    display: inline-block;
-    margin: 10px;
-}
-/* Ponga este formato para que las imagenes sean del mismo tamaño y queden alineadas*/
-.section-images {
-    justify-content: center;
-    justify-items: center;
-    width: 480px;
-    height: 480px;
-}
+
 /* Agrego clase para que sea igual que p otros contenidos similares y no crear varios css */
-.same-as-p {
+.beige-color {
     color: var(--beige);
-    font-size: 20px;
-    line-height: 28px;
-    margin: 20px;
-    padding: 10px;
-    text-align: center;
 }
 
-.three-content-max{
-    width: 32%;
-}
 
 .center-image {
     text-align: center;
-}
-
-.same-as-index-main {
-    display: inline-block;
-    margin: 60px;
-    justify-content: center;
-    justify-items: center;
-    text-align: center;
-
-}
-
-.products-borders {
-    border: 5px;
 }
 
 .size-chart-images {
@@ -154,7 +127,7 @@ body main section{
 }
 .button-style {
     padding: 9px;
-    background-color: var(--beige);
+    background-color: var(--dark-grey);
     border: none;
     border-radius: 6px;
 }
@@ -164,10 +137,14 @@ body main section{
     background-color: var(--crimson);
  }
 
- 
-/*ACA ARRANCA FOOTER*/ 
-/* le doy formato al footer para que quede fijo y ordenado el contenido*/ 
 
+ .image-sizes {
+    max-height: 480px;
+    max-width: 480px;
+ }
+ 
+
+/* old 
 footer{ 
         padding-top: 20px; 
         width: 100%;
@@ -175,26 +152,37 @@ footer{
         opacity: 0.8;
         display: flex ;
         justify-content: center;
-        margin-top: 150px;
+        margin-top: auto;
         margin-bottom: 0px;
     }
-footer img{
-            width: 150px;
-            display: inline-block;
-            padding: 5px;
-            max-height: 100px;
-            max-width: 100px;}
-footer h3 ul li{font-size: 20px; line-height: 28px;}
+    */
 
+footer h3 {font-size: 20px; line-height: 28px;}
 
-/* le doy un maximo de altura para que no se rompa el footer o las imagenes se excedan.*/
-.mi-contenedor {
-    max-height: 1rem;
-    display: flex;
-    flex-direction: column;
-}
-
-
-.mi-contenedor p {
-    margin: 0;
-}
+footer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+    padding: 20px;
+    background-color: #323232;
+  }
+  
+  .contact-info h3, .social-media h3, .payment-methods h3 {
+    margin-top: 0;
+  }
+  
+  .social-media img, .payment-methods img {
+    height: auto;
+    width: 100px;
+    display:inline-flex;
+    text-align: center;
+    padding: 5px;
+    max-height: 100px;
+    max-width: 100px;
+  }
+  
+  @media screen and (max-width: 767px) {
+    footer {
+      grid-template-columns: 1fr;
+    }
+  }
