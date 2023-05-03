@@ -1,0 +1,74 @@
+.bg-color-grey {
+    background-color: $dark-grey;
+  }
+  
+  * {
+    font-family: 'Roboto Condensed', sans-serif;
+  }
+  
+  h1,h2{
+    text-align: center; 
+    margin: 30px; 
+    color: $crimson;
+  }
+  
+  h3 {
+    text-align: center; 
+    margin: 30px; 
+    color: #F0122D;   
+  }
+  
+  p{
+    color: $beige;
+    font-size: 20px;
+    line-height: 28px;
+    margin: 5px;
+    padding: 5px;
+    text-align: center;
+  }
+  
+  h1 {
+    font-size: 45px;
+  }
+  
+  h2 {
+    font-size: 35px;
+  }
+  
+  h3 {
+    font-size: 20px;
+  }
+  
+  .center-image {
+    text-align: center;
+  }
+  
+  .size-chart-images {
+    text-align: center;
+    margin: 30px;
+  }
+  
+  .size-chart-height {
+    height: 1156px;
+  }
+  
+  .button-style {
+    padding: 9px;
+    background-color: $dark-grey;
+    border: none;
+    border-radius: 6px;
+  }
+  
+  .button-hover:hover {
+    color: $beige;
+    background-color: $crimson;
+  }
+  
+  .image-sizes {
+    max-height: 480px;
+    max-width: 480px;
+  }
+  
+  .beige-color {
+    color: $beige;
+  }

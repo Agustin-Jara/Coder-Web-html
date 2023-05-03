@@ -1,0 +1,40 @@
+nav {
+    font-size: 60px;
+    justify-content: space-evenly;
+  }
+  
+  nav:hover {
+    color: $crimson;
+  }
+  
+  .sticky {
+    position: sticky;
+    top: 0;
+    background-color: $crimson;
+    text-align: center;
+    font-size: 20px;
+    z-index: 2;
+    margin-top: 0;
+  }
+  
+  .links {
+    color: $beige;
+    text-decoration: solid;
+    max-height: 100%;
+    padding: 0 10px;
+  }
+  
+  .link:hover {
+    color: $crimson;
+    text-decoration: wavy;
+  }
+  
+  .logo {
+    max-height: 100%;
+    min-height: 100%;
+  }
+  
+  .shopping-cart {
+    max-height: 100px;
+    min-height: 50%;
+  }
